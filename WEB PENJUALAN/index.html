@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abong's Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <span class="logo">🛍️</span>
+      <h1>Abong's Store</h1>
+    </div>
+
+    <div class="header-actions">
+      <div class="search">
+        <input id="searchInput" type="text" placeholder="Cari produk..." aria-label="Cari produk" />
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="themeToggle" aria-label="Mode Gelap" />
+        <span class="slider"></span>
+        <span class="toggle-label">Dark Mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Produk -->
+    <section>
+      <h2 class="section-title">Produk Unggulan</h2>
+      <div id="productGrid" class="grid"></div>
+      <p id="emptyState" class="empty" hidden>Tidak ada produk yang cocok dengan pencarian.</p>
+    </section>
+
+    <!-- Keranjang -->
+    <section>
+      <h2 class="section-title">Keranjang Belanja</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total">
+          Total: <strong id="cartTotal">Rp0</strong>
+        </div>
+        <button id="checkoutBtn" class="primary">Checkout</button>
+        <button id="clearCartBtn" class="ghost">Kosongkan</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
